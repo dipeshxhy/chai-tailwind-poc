@@ -70,3 +70,55 @@ export const chaiDarkmode = {
   backgroundColor: "#333",
   color: "#fff",
 };
+
+// display
+export const chaiNav = {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+};
+
+export const chaiMenu = {
+  display: "flex",
+  gap: "8px",
+  alignItems: "center",
+};
+
+// button
+export const chaiBtn = {
+  padding: "10px 20px",
+  backgroundColor: "#fe9536",
+  color: "#000",
+  outline: "none",
+  border: "none",
+  fontSize: "24px",
+  borderRadius: "8px",
+  cursor: "pointer",
+  transition: "all ease 0.3s",
+};
+export const buttonHover = {
+  backgroundColor: "#ffa95a",
+};
+
+// box
+export const chaiBox = {
+  padding: "20px",
+  border: "1px solid #fe9536",
+  fontSize: "24px",
+};
+// image
+export const chaiImg = {
+  width: "200px",
+  objectFit: "cover",
+};
+
+// input
+export const chaiInput = {
+  padding: "10px",
+  backgroundColor: "#ffa95a",
+  border: "none",
+  outline: "none",
+  width: "300px",
+  borderRadius: "8px",
+  fontSize: "20px",
+};
