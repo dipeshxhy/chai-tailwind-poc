@@ -9,12 +9,6 @@
  * small 12.8px
  * vsmall 10.24px
  */
-//base styles
-export const baseStyles = {
-  margin: 0,
-  padding: 0,
-  boxSizing: "border-box",
-};
 
 // heading styles
 // h1
@@ -70,4 +64,9 @@ export const chaiParaMedium = {
 };
 export const chaiParaSmall = {
   fontSize: "14px",
+};
+// Darkmode
+export const chaiDarkmode = {
+  backgroundColor: "#333",
+  color: "#fff",
 };
