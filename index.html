@@ -2,27 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChaiTailwind &mdash; style your code with simple class</title>
+    <title>
+      Chai Tailwind☕ &mdash;Style your website easily by adding chai style
+    </title>
+    <link rel="icon" href="chai.svg" type="image/x-icon" />
   </head>
-  <body class="chai-dark">
-    <!-- heading -->
-    <div class="heading">
-      <h1 class="chai-h-1">Chaicode H1</h1>
-      <h1 class="chai-h-2">Chaicode H2</h1>
-      <h1 class="chai-h-3">Chaicode H3</h1>
-      <h1 class="chai-h-4">Chaicode H4</h1>
-      <h1 class="chai-h-5">Chaicode H5</h1>
-      <h1 class="chai-h-6">Chaicode H6</h1>
-    </div>
-    <!-- paragraph -->
-    <p class="chai-p-lg">
-      This is Chai Tailwind Framework. It provides styles class which is based
-      on chai theme and all class start from chai-*
-    </p>
-    <p class="chai-p-md">it is challenge given by our Hitesh Sir</p>
-    <p class="chai-p-sm">Made with Love and Fun</p>
-    <script type="module" src="./styles.js"></script>
+  <body>
+    <!-- Navbar -->
+    <nav class="chai-nav">
+      <div class="chai-flex chai-align-center">
+        <img class="chai-logo" src="/chai.svg" alt="" />
+        <h2 class="chai-h-3 chai-primary">ChaiTailwind</h2>
+      </div>
+      <ul class="chai-menu">
+        <li class="chai-p-md">Home</li>
+        <li class="chai-p-md">About</li>
+        <li class="chai-p-md">Contact</li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="chai-center" style="padding: 40px">
+      <h1 class="chai-h-1 chai-primary">Welcome to Chai UI</h1>
+      <p class="chai-p-lg">
+        Build your own styling system using JavaScript like a pro 🚀
+      </p>
+
+      <button class="chai-btn">Get Started</button>
+    </section>
+
+    <!-- Cards / Boxes -->
+    <section class="chai-center" style="gap: 20px; padding: 40px">
+      <div class="chai-box">
+        <h3 class="chai-h-3">Fast</h3>
+        <p class="chai-p-sm">No CSS file needed</p>
+      </div>
+
+      <div class="chai-box">
+        <h3 class="chai-h-3">Reusable</h3>
+        <p class="chai-p-sm">Write once, use anywhere</p>
+      </div>
+
+      <div class="chai-box">
+        <h3 class="chai-h-3">Modern</h3>
+        <p class="chai-p-sm">JS-driven styling</p>
+      </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="chai-center" style="padding: 40px">
+      <img
+        class="chai-img"
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+        alt="chai"
+        width="300"
+      />
+    </section>
+
+    <!-- Form Section -->
+    <section class="chai-center" style="padding: 40px">
+      <input class="chai-input" placeholder="Enter your name" />
+      <button class="chai-btn">Submit</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="chai-center" style="padding: 20px">
+      <p class="chai-p-sm">Made with ☕ by Dipesh</p>
+    </footer>
+
+    <!-- JS -->
     <script type="module" src="./main.js"></script>
   </body>
 </html>

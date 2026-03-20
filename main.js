@@ -16,18 +16,22 @@ import {
   chaiBox,
   chaiImg,
   chaiInput,
+  chaiCenter,
+  chaiPrimary,
+  chaiLogo,
+  chaiFlex,
+  chaiAlignCenter,
 } from "./styles.js";
 
-function selectElement(selector) {
-  return document.querySelector(selector);
-}
-function applyStyles(style, element) {
-  Object.assign(element.style, style);
-}
+// helpers
+const select = (selector) => document.querySelectorAll(selector);
 
-// base style inject
+const applyStyles = (style, elements) => {
+  elements.forEach((el) => Object.assign(el.style, style));
+};
+
+// base styles
 const styleTag = document.createElement("style");
-
 styleTag.innerHTML = `
   * {
     margin: 0;
@@ -35,88 +39,55 @@ styleTag.innerHTML = `
     box-sizing: border-box;
   }
 `;
-
 document.head.appendChild(styleTag);
 
-// DarkMode
-const body = selectElement("body");
-applyStyles(chaiDarkmode, body);
+// apply styles
+applyStyles(chaiDarkmode, select("body"));
 
-// Heading
-const h1 = selectElement(".chai-h-1");
-if (h1) {
-  applyStyles(chaiH1, h1);
-}
-const h2 = selectElement(".chai-h-2");
-if (h2) {
-  applyStyles(chaiH2, h2);
-}
-const h3 = selectElement(".chai-h-3");
-if (h3) {
-  applyStyles(chaiH1, h3);
-}
-const h4 = selectElement(".chai-h-4");
-if (h4) {
-  applyStyles(chaiH4, h4);
-}
-const h5 = selectElement(".chai-h-5");
-if (h5) {
-  applyStyles(chaiH4, h5);
-}
-const h6 = selectElement(".chai-h-6");
-if (h6) {
-  applyStyles(chaiH4, h6);
-}
+// utility
+applyStyles(chaiCenter, select(".chai-center"));
+applyStyles(chaiPrimary, select(".chai-primary"));
+applyStyles(chaiFlex, select(".chai-flex"));
+applyStyles(chaiAlignCenter, select(".chai-align-center "));
+
+// logo
+applyStyles(chaiLogo, select(".chai-logo"));
+
+// headings
+applyStyles(chaiH1, select(".chai-h-1"));
+applyStyles(chaiH2, select(".chai-h-2"));
+applyStyles(chaiH3, select(".chai-h-3"));
+applyStyles(chaiH4, select(".chai-h-4"));
+applyStyles(chaiH5, select(".chai-h-5"));
+applyStyles(chaiH6, select(".chai-h-6"));
 
 // paragraph
-const pLg = selectElement(".chai-p-lg");
-if (pLg) {
-  applyStyles(chaiParaLarge, pLg);
-}
-const pMd = selectElement(".chai-p-md");
-if (pMd) {
-  applyStyles(chaiParaMedium, pMd);
-}
-const pSm = selectElement(".chai-p-sm");
-if (pSm) {
-  applyStyles(chaiParaSmall, pSm);
-}
+applyStyles(chaiParaLarge, select(".chai-p-lg"));
+applyStyles(chaiParaMedium, select(".chai-p-md"));
+applyStyles(chaiParaSmall, select(".chai-p-sm"));
 
-// Navbar
-const nav = selectElement(".chai-nav");
-if (nav) {
-  applyStyles(chaiNav, nav);
-}
-const navMenu = selectElement(".chai-menu");
-if (navMenu) {
-  applyStyles(chaiMenu, navMenu);
-}
+// navbar
+applyStyles(chaiNav, select(".chai-nav"));
+applyStyles(chaiMenu, select(".chai-menu"));
 
-// button
-const btn = selectElement(".chai-btn");
-if (btn) {
-  applyStyles(chaiBtn, btn);
+// buttons
+select(".chai-btn").forEach((btn) => {
+  Object.assign(btn.style, chaiBtn);
+
   btn.addEventListener("mouseover", () => {
-    applyStyles(buttonHover, btn);
+    Object.assign(btn.style, buttonHover);
   });
+
   btn.addEventListener("mouseleave", () => {
-    applyStyles({ backgroundColor: "#fe9536" }, btn);
+    btn.style.backgroundColor = "#fe9536";
   });
-}
+});
 
-// chai box
-const box = selectElement(".chai-box");
-if (box) {
-  applyStyles(chaiBox, box);
-}
+// box
+applyStyles(chaiBox, select(".chai-box"));
 
-// chai image
-const img = selectElement(".chai-img");
-if (img) {
-  applyStyles(chaiImg, img);
-}
+// image
+applyStyles(chaiImg, select(".chai-img"));
 
-const input = selectElement(".chai-input");
-if (input) {
-  applyStyles(chaiInput, input);
-}
+// input
+applyStyles(chaiInput, select(".chai-input"));
