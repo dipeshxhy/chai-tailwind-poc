@@ -1,5 +1,5 @@
 {
-  "name": "chai-tailwind",
+  "name": "@dipesh/chai-tailwind",
   "version": "2.0.0",
   "description": "A utility-first JavaScript styling framework using chai-* classes. No build step, no config.",
   "main": "./main.js",
@@ -28,10 +28,14 @@
     "no-build",
     "dark-mode"
   ],
-  "author": "Your Name",
+  "author": "dipeshxhy",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/chai-tailwind"
-  }
+    "url": "https://github.com/dipeshxhy/chai-tailwind-poc"
+  },
+  "bugs": {
+    "url": "https://github.com/dipeshxhy/chai-tailwind-poc/issues"
+  },
+  "homepage": "https://github.com/dipeshxhy/chai-tailwind-poc#readme"
 }
