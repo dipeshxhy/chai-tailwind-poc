@@ -8,7 +8,7 @@
 
 ```html
 <script type="module">
-  import { chaiInit } from "https://cdn.jsdelivr.net/npm/chai-tailwind/main.js";
+  import { chaiInit } from "https://cdn.jsdelivr.net/npm/@masterdipeshjs/chai-tailwind/main.js";
   chaiInit({ darkMode: true });
 </script>
 ```
@@ -16,11 +16,11 @@
 Or with npm:
 
 ```bash
-npm install chai-tailwind
+npm install @masterdipeshjs/chai-tailwind
 ```
 
 ```js
-import { chaiInit } from "chai-tailwind";
+import { chaiInit } from "@masterdipeshjs/chai-tailwind";
 chaiInit({ darkMode: true });
 ```
 
@@ -291,7 +291,7 @@ chaiInit({
 ## 🎨 Use Tokens Directly (JS/React)
 
 ```js
-import { chaiTokens, chaiBtn, chaiCard } from "chai-tailwind/styles";
+import { chaiTokens, chaiBtn, chaiCard } from "@masterdipeshjs/chai-tailwind/styles";
 
 // In React
 <button style={chaiBtn}>Click me</button>
