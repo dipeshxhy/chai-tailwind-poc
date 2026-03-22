@@ -1,5 +1,5 @@
 {
-  "name": "@dipesh/chai-tailwind",
+  "name": "@masterdipeshjs/chai-tailwind",
   "version": "1.0.0",
   "description": "A utility-first JavaScript styling framework using chai-* classes. No build step, no config.",
   "main": "./main.js",
