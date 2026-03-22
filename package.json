@@ -1,6 +1,6 @@
 {
   "name": "@dipesh/chai-tailwind",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "A utility-first JavaScript styling framework using chai-* classes. No build step, no config.",
   "main": "./main.js",
   "module": "./main.js",
