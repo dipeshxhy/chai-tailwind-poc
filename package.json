@@ -1,0 +1,37 @@
+{
+  "name": "chai-tailwind",
+  "version": "2.0.0",
+  "description": "A utility-first JavaScript styling framework using chai-* classes. No build step, no config.",
+  "main": "./main.js",
+  "module": "./main.js",
+  "type": "module",
+  "exports": {
+    ".": "./main.js",
+    "./styles": "./styles.js"
+  },
+  "files": [
+    "main.js",
+    "styles.js",
+    "README.md"
+  ],
+  "scripts": {
+    "demo": "npx serve ."
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "utility",
+    "chai",
+    "styling",
+    "tailwind",
+    "vanilla-js",
+    "no-build",
+    "dark-mode"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/chai-tailwind"
+  }
+}
